@@ -1,0 +1,29 @@
+@import "variables";
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.show {
+  display: block !important;
+}
+
+.show-inline {
+  display: inline !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
