@@ -1,5 +1,176 @@
 @import "variables";
 
 [data-page="home"] {
-  //
+  .home-wrapper {
+    font-family: $font-2;
+    font-size: 18px;
+    color: $color-1;
+  }
+
+  a {
+    color: $color-2;
+
+    &:visited {
+      color: $color-2;
+    }
+  }
+
+  .home-image {
+    height: 670px;
+    width: 100%;
+    background-image: url("images/dog-home.jpg");
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .white-div {
+    background-color: $color-3;
+    width: 447px;
+    height: 283px;
+    opacity: 0.4;
+    position: absolute;
+    top: 292px;
+    left: 95px;
+  }
+
+  .image-header {
+    font-family: $font-1;
+    font-size: 45px;
+    font-weight: 600;
+    color: $color-1;
+    line-height: 55px;
+    position: absolute;
+    top: 318px;
+    left: 132px;
+    width: 376px;
+    height: 230px;
+  }
+
+  .image-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .image-dog-1 {
+    width: 463px;
+    height: 420px;
+    background-image: url("images/fluffy-puppy.jpg");
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .image-dog-2 {
+    width: 463px;
+    height: 420px;
+    background-image: url("images/white-dog.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .paragraph-text {
+    width: 400px;
+  }
+
+  .large-image {
+    height: 590px;
+    width: 100%;
+    background-image: url("images/running-dog.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .large-image-text {
+    font-family: $font-1;
+    font-size: 45px;
+    font-weight: 800;
+    color: $color-3;
+    line-height: 55px;
+    position: absolute;
+    top: 183px;
+    left: 72px;
+  }
+
+  .large-image-text-2 {
+    font-family: $font-2;
+    font-size: 22px;
+    color: $color-3;
+    line-height: 55px;
+    margin-top: 34px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .quote {
+    font-family: $font-1;
+    font-size: 45px;
+    font-weight: 600;
+    color: $color-1;
+    line-height: 60px;
+    width: 838px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .small-quote-text {
+    font-family: $font-2;
+    font-size: 20px;
+    color: $color-1;
+    margin-top: 27px;
+  }
+
+  .gallery-wrapper {
+    background-color: #475a58;
+    width: 100%;
+    padding-top: 69px;
+  }
+
+  .gallery-text-wrapper {
+    margin-left: 54px;
+  }
+
+  .photo-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    margin-bottom: 45px;
+  }
+
+  .grid-item-1 {
+    width: 250px;
+    height: 250px;
+    background-image: url("images/cavalier.jpg");
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  .grid-item-2 {
+    width: 250px;
+    height: 250px;
+    background-image: url("images/tiny-puppy.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .grid-item-3 {
+    width: 250px;
+    height: 250px;
+    background-image: url("images/dog-home.jpg");
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .grid-item-4 {
+    width: 250px;
+    height: 250px;
+    background-image: url("images/sleeping-pup.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .insta-padding {
+    padding-bottom: 72px;
+  }
 }

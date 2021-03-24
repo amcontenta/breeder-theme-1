@@ -1,0 +1,33 @@
+@import "variables";
+
+.footer-wrapper {
+  background-color: #e5e8e8;
+  position: relative;
+  font-family: $font-2;
+  font-size: 12px;
+  color: $color-1;
+  line-height: 2.5;
+
+  .insta-logo-nav {
+    position: absolute;
+    top: 72px;
+    right: 100px;
+  }
+
+  .facebook-logo-nav {
+    position: absolute;
+    top: 72px;
+    right: 61px;
+  }
+
+  .contenta-doodles {
+    font-family: $font-1;
+    font-size: 20px;
+    color: $color-1;
+    padding-top: 55px;
+  }
+
+  .padding-bottom {
+    padding-bottom: 56px;
+  }
+}

@@ -1,1 +1,40 @@
 @import "variables";
+
+h1 {
+  font-family: $font-1;
+  font-size: 50px;
+  font-weight: 800;
+  color: $color-3;
+}
+
+h2 {
+  font-family: $font-1;
+  font-size: 40px;
+  font-weight: 600;
+  color: $color-1;
+}
+
+.font-white {
+  color: white;
+}
+
+.white-fill {
+  fill: white;
+}
+
+.button {
+  font-family: $font-2;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: $color-3;
+  background-color: $color-2;
+  padding: 17px 37px;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.1s;
+
+  &:hover {
+    background-color: $color-1;
+    color: $color-3;
+  }
+}
