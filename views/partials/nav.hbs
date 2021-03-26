@@ -1,11 +1,11 @@
 <div class="desktop-nav-wrapper">
   <div class="doodles-name-logo">Contenta Doodles</div>
   <div class="nav-links">
-    <a href="">Adopt</a>
-    <a href="">Puppies</a>
-    <a href="">Parents</a>
-    <a href="">Information</a>
-    <a href="">Contact</a>
+    <a href="adopt" {{#isAdopt}}class="active" {{/isAdopt}}>Adopt</a>
+    <a href="puppies" {{#isPuppies}}class="active" {{/isPuppies}}>Puppies</a>
+    <a href="parents" {{#isParents}}class="active" {{/isParents}}>Parents</a>
+    <a href="info" {{#isInfo}}class="active" {{/isInfo}}>Information</a>
+    <a href="contact" {{#isContact}}class="active" {{/isContact}}>Contact</a>
   </div>
   <div>
     <a href="https://www.instagram.com/">{{> insta-icon width="18px" class="insta-logo-nav" }}</a>

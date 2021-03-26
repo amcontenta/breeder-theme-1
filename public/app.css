@@ -128,7 +128,7 @@ table {
 
 h1 {
   font-family: Shippori Mincho B1;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 800;
   color: white; }
 
@@ -306,6 +306,63 @@ h2 {
 
 [data-page="home"] .insta-padding {
   padding-bottom: 72px; }
+
+[data-page="adopt"] .adopt-wrapper {
+  font-family: Open Sans;
+  font-size: 18px;
+  color: #28282b; }
+
+[data-page="adopt"] .header-image {
+  height: 500px;
+  width: 100%;
+  background-image: url("images/dog-grass.jpg");
+  background-position: 50% 85%;
+  background-size: cover;
+  position: relative;
+  overflow: auto; }
+
+[data-page="adopt"] .title {
+  margin: 394px auto 0 auto;
+  width: 680px; }
+
+[data-page="adopt"] .text-wrapper {
+  width: 680px;
+  margin: 0 auto;
+  line-height: 24px; }
+
+[data-page="adopt"] .ul-bold {
+  font-weight: 800;
+  text-decoration: underline;
+  font-size: 22px; }
+
+[data-page="faq"] .faq-wrapper {
+  font-family: Open Sans;
+  font-size: 18px;
+  color: #28282b; }
+
+[data-page="faq"] .header-image {
+  height: 500px;
+  width: 100%;
+  background-image: url("images/sleeping.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: auto; }
+
+[data-page="faq"] .title {
+  margin: 394px auto 0 auto;
+  width: 720px; }
+
+[data-page="faq"] .text-wrapper {
+  width: 720px;
+  margin: 0 auto;
+  line-height: 24px; }
+
+[data-page="faq"] .header {
+  font-weight: 800;
+  font-family: Shippori Mincho B1;
+  font-size: 24px;
+  line-height: 24px; }
 
 .footer-wrapper {
   background-color: #e5e8e8;
