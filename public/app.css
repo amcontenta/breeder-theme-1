@@ -126,6 +126,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.page-wrapper {
+  max-width: 1400px;
+  margin: 0 auto; }
+
 h1 {
   font-family: Shippori Mincho B1;
   font-size: 55px;
@@ -140,6 +144,9 @@ h2 {
 
 .font-white {
   color: white; }
+
+.font-black {
+  color: #28282b; }
 
 .white-fill {
   fill: white; }
@@ -216,7 +223,8 @@ h2 {
   background-size: cover; }
 
 [data-page="home"] .paragraph-text {
-  width: 400px; }
+  width: 400px;
+  line-height: 30px; }
 
 [data-page="home"] .large-image {
   height: 590px;
@@ -364,6 +372,169 @@ h2 {
   font-size: 24px;
   line-height: 24px; }
 
+[data-page="contact"] .contact-wrapper {
+  font-family: Open Sans;
+  font-size: 20px;
+  color: #28282b;
+  line-height: 30px;
+  overflow: auto; }
+
+[data-page="contact"] .text-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around; }
+
+[data-page="contact"] .header {
+  font-weight: 600;
+  font-family: Shippori Mincho B1;
+  font-size: 40px;
+  line-height: 30px; }
+
+[data-page="contact"] .margin-top {
+  margin-top: 210px; }
+
+[data-page="contact"] .margin-bottom {
+  margin-bottom: 170px; }
+
+[data-page="contact"] a {
+  color: #483d8b; }
+  [data-page="contact"] a:visited {
+    color: #483d8b; }
+
+[data-page="futurelitters"] .future-litters-wrapper {
+  font-family: Open Sans;
+  font-size: 18px;
+  color: #28282b; }
+
+[data-page="futurelitters"] .header-image {
+  height: 500px;
+  width: 100%;
+  background-image: url("images/pup-rest.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: auto; }
+
+[data-page="futurelitters"] .title {
+  margin: 394px auto 0 15%; }
+
+[data-page="futurelitters"] .image-wrapper {
+  display: flex;
+  justify-content: center; }
+
+[data-page="futurelitters"] .image-dog-1 {
+  width: 463px;
+  height: 420px;
+  background-image: url("images/dog-bed.jpg");
+  background-position: center center;
+  background-size: cover; }
+
+[data-page="futurelitters"] .image-dog-2 {
+  width: 463px;
+  height: 420px;
+  background-image: url("images/cavapoo-mom.jpg");
+  background-position: 50% 35%;
+  background-size: cover; }
+
+[data-page="futurelitters"] .image-dog-3 {
+  width: 463px;
+  height: 420px;
+  background-image: url("images/doodle-dad.jpg");
+  background-position: center center;
+  background-size: cover; }
+
+[data-page="futurelitters"] .image-dog-4 {
+  width: 463px;
+  height: 420px;
+  background-image: url("images/cavalier-mom.jpg");
+  background-position: 50% 35%;
+  background-size: cover; }
+
+[data-page="futurelitters"] .margin-right {
+  margin-right: 20px; }
+
+[data-page="futurelitters"] .line-height {
+  line-height: 40px; }
+
+[data-page="pastlitters"] {
+  /* Create four equal columns that sits next to each other */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */ }
+  [data-page="pastlitters"] .pastlitters-wrapper {
+    font-family: Open Sans;
+    font-size: 18px;
+    color: #28282b;
+    overflow: auto; }
+  [data-page="pastlitters"] .margin-top {
+    margin-top: 150px; }
+  [data-page="pastlitters"] .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px; }
+  [data-page="pastlitters"] .column {
+    flex: 49%;
+    max-width: 49.5%;
+    padding: 0 4px; }
+  [data-page="pastlitters"] .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%; }
+  @media screen and (max-width: 800px) {
+    [data-page="pastlitters"] .column {
+      flex: 100%;
+      max-width: 100%; } }
+  @media screen and (max-width: 600px) {
+    [data-page="pastlitters"] .column {
+      flex: 100%;
+      max-width: 100%; } }
+
+[data-page="parents"] .parents-wrapper {
+  font-family: Open Sans;
+  font-size: 18px;
+  color: #28282b; }
+
+[data-page="parents"] .header-image {
+  height: 500px;
+  width: 100%;
+  background-image: url("images/dog-bed-2.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: auto; }
+
+[data-page="parents"] .title {
+  margin: 394px auto 0 15%; }
+
+[data-page="parents"] .image-text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center; }
+
+[data-page="parents"] .image-dog-1 {
+  width: 463px;
+  height: 420px;
+  background-image: url("images/doodle-dad.jpg");
+  background-position: center center;
+  background-size: cover; }
+
+[data-page="parents"] .image-dog-2 {
+  width: 463px;
+  height: 420px;
+  background-image: url("images/cavapoo-mom.jpg");
+  background-position: 50% 35%;
+  background-size: cover; }
+
+[data-page="parents"] .paragraph-text {
+  width: 400px;
+  line-height: 30px; }
+
+[data-page="parents"] .mb-xxxs {
+  margin-bottom: 18px; }
+
+[data-page="parents"] .font-20 {
+  font-size: 20px; }
+
 .footer-wrapper {
   background-color: #e5e8e8;
   position: relative;
@@ -389,7 +560,8 @@ h2 {
 
 .desktop-nav-wrapper {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   .desktop-nav-wrapper .doodles-name-logo {
     position: absolute;
     top: 18px;
@@ -397,6 +569,9 @@ h2 {
     font-family: Shippori Mincho B1;
     font-size: 28px;
     color: #28282b; }
+    .desktop-nav-wrapper .doodles-name-logo a {
+      color: #28282b;
+      text-decoration: none; }
   .desktop-nav-wrapper .nav-links {
     font-family: Open Sans;
     font-size: 18px;

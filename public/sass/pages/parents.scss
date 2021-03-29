@@ -1,0 +1,59 @@
+@import "variables";
+
+[data-page="parents"] {
+  .parents-wrapper {
+    font-family: $font-2;
+    font-size: 18px;
+    color: $color-1;
+  }
+
+  .header-image {
+    height: 500px;
+    width: 100%;
+    background-image: url("images/dog-bed-2.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: auto;
+  }
+
+  .title {
+    margin: 394px auto 0 15%;
+  }
+
+  .image-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .image-dog-1 {
+    width: 463px;
+    height: 420px;
+    background-image: url("images/doodle-dad.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .image-dog-2 {
+    width: 463px;
+    height: 420px;
+    background-image: url("images/cavapoo-mom.jpg");
+    background-position: 50% 35%;
+    background-size: cover;
+  }
+
+  .paragraph-text {
+    width: 400px;
+    line-height: 30px;
+  }
+
+  .mb-xxxs {
+    margin-bottom: 18px;
+  }
+
+  .font-20 {
+    font-size: 20px;
+  }
+}

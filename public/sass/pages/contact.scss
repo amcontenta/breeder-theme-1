@@ -1,0 +1,40 @@
+@import "variables";
+
+[data-page="contact"] {
+  .contact-wrapper {
+    font-family: $font-2;
+    font-size: 20px;
+    color: $color-1;
+    line-height: 30px;
+    overflow: auto;
+  }
+
+  .text-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .header {
+    font-weight: 600;
+    font-family: $font-1;
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .margin-top {
+    margin-top: 210px;
+  }
+
+  .margin-bottom {
+    margin-bottom: 170px;
+  }
+
+  a {
+    color: $color-2;
+
+    &:visited {
+      color: $color-2;
+    }
+  }
+}

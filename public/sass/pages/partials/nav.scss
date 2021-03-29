@@ -2,6 +2,7 @@
 .desktop-nav-wrapper {
   position: absolute;
   width: 100%;
+  z-index: 1;
 
   .doodles-name-logo {
     position: absolute;
@@ -10,6 +11,11 @@
     font-family: $font-1;
     font-size: 28px;
     color: $color-1;
+
+    a {
+      color: $color-1;
+      text-decoration: none;
+    }
   }
 
   .nav-links {

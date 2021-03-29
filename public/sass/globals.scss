@@ -1,5 +1,10 @@
 @import "variables";
 
+.page-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 h1 {
   font-family: $font-1;
   font-size: 55px;
@@ -16,6 +21,10 @@ h2 {
 
 .font-white {
   color: white;
+}
+
+.font-black {
+  color: $color-1;
 }
 
 .white-fill {

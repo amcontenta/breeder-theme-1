@@ -27,32 +27,38 @@ router.get("/faq", function (req, res, next) {
   });
 });
 
-  // res.render("/puppies", {
-  //   layout: "wrapper",
-  //   template: "puppies",
-  //   title: "Puppies",
-  //   isPuppies: true,
-  // });
+router.get("/futurelitters", function (req, res, next) {
+  res.render("futurelitters", {
+    layout: "wrapper",
+    template: "futurelitters",
+    title: "Future Litters",
+  });
+});
 
-  // res.render("/parents", {
-  //   layout: "wrapper",
-  //   template: "parents",
-  //   title: "Parents",
-  //   isParents: true,
-  // });
+router.get("/pastlitters", function (req, res, next) {
+  res.render("pastlitters", {
+    layout: "wrapper",
+    template: "pastlitters",
+    title: "Past Litters",
+  });
+});
 
-  // res.render("/info", {
-  //   layout: "wrapper",
-  //   template: "info",
-  //   title: "Info",
-  //   isInfo: true,
-  // });
+router.get("/contact", function (req, res, next) {
+  res.render("contact", {
+    layout: "wrapper",
+    template: "contact",
+    title: "Contact",
+    isContact: true,
+  });
+});
 
-  // res.render("/contact", {
-  //   layout: "wrapper",
-  //   template: "contact",
-  //   title: "Contact",
-  //   isContact: true,
-  // });
+router.get("/parents", function (req, res, next) {
+  res.render("parents", {
+    layout: "wrapper",
+    template: "parents",
+    title: "Parents",
+    isContact: true,
+  });
+});
 
 module.exports = router;

@@ -1,0 +1,68 @@
+@import "variables";
+
+[data-page="futurelitters"] {
+  .future-litters-wrapper {
+    font-family: $font-2;
+    font-size: 18px;
+    color: $color-1;
+  }
+
+  .header-image {
+    height: 500px;
+    width: 100%;
+    background-image: url("images/pup-rest.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: auto;
+  }
+
+  .title {
+    margin: 394px auto 0 15%;
+  }
+
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-dog-1 {
+    width: 463px;
+    height: 420px;
+    background-image: url("images/dog-bed.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .image-dog-2 {
+    width: 463px;
+    height: 420px;
+    background-image: url("images/cavapoo-mom.jpg");
+    background-position: 50% 35%;
+    background-size: cover;
+  }
+
+  .image-dog-3 {
+    width: 463px;
+    height: 420px;
+    background-image: url("images/doodle-dad.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .image-dog-4 {
+    width: 463px;
+    height: 420px;
+    background-image: url("images/cavalier-mom.jpg");
+    background-position: 50% 35%;
+    background-size: cover;
+  }
+
+  .margin-right {
+    margin-right: 20px;
+  }
+
+  .line-height {
+    line-height: 40px;
+  }
+}
