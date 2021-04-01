@@ -27,6 +27,14 @@ router.get("/faq", function (req, res, next) {
   });
 });
 
+router.get("/supplylist", function (req, res, next) {
+  res.render("supplylist", {
+    layout: "wrapper",
+    template: "supplylist",
+    title: "Supply List",
+  });
+});
+
 router.get("/futurelitters", function (req, res, next) {
   res.render("futurelitters", {
     layout: "wrapper",

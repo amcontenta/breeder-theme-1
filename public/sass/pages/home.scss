@@ -90,7 +90,7 @@
     line-height: 55px;
     position: absolute;
     top: 183px;
-    left: 72px;
+    left: 95px;
   }
 
   .large-image-text-2 {
@@ -123,55 +123,88 @@
 
   .gallery-wrapper {
     background-color: #475a58;
-    width: 100%;
     padding-top: 69px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .gallery-text-wrapper {
-    margin-left: 54px;
+    text-align: left;
   }
 
   .photo-grid {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 35px;
     margin-bottom: 45px;
   }
 
-  .grid-item-1 {
-    width: 250px;
+  .grid-item {
+    width: 25%;
     height: 250px;
-    background-image: url("images/cavalier.jpg");
-    background-position: center bottom;
+    margin-right: 25px;
     background-size: cover;
-  }
 
-  .grid-item-2 {
-    width: 250px;
-    height: 250px;
-    background-image: url("images/tiny-puppy.jpg");
-    background-position: center center;
-    background-size: cover;
-  }
+    &:nth-child(1) {
+      background-image: url("images/cavalier.jpg");
+      background-position: center bottom;
+    }
 
-  .grid-item-3 {
-    width: 250px;
-    height: 250px;
-    background-image: url("images/dog-home.jpg");
-    background-position: center top;
-    background-size: cover;
-  }
+    &:nth-child(2) {
+      background-image: url("images/tiny-puppy.jpg");
+      background-position: center center;
+    }
 
-  .grid-item-4 {
-    width: 250px;
-    height: 250px;
-    background-image: url("images/sleeping-pup.jpg");
-    background-position: center center;
-    background-size: cover;
+    &:nth-child(3) {
+      background-image: url("images/dog-home.jpg");
+      background-position: center top;
+    }
+
+    &:nth-child(4) {
+      background-image: url("images/sleeping-pup.jpg");
+      background-position: center center;
+      margin-right: 0;
+    }
   }
 
   .insta-padding {
     padding-bottom: 72px;
+  }
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 840px) {
+    .image-header {
+      font-size: 30px;
+      line-height: 36px;
+      top: 502px;
+      left: 25px;
+      width: 251px;
+      height: 146px;
+      padding: 24px 25px;
+    }
+
+    .white-div {
+      background-color: $color-3;
+      width: 300px;
+      height: 200px;
+      top: 502px;
+      left: 25px;
+    }
+
+    .image-text-wrapper {
+      display: block;
+      padding: 0 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .image-dog-1 {
+      order: 1;
+    }
+    .paragraph-text {
+      order: 2;
+    }
   }
 }

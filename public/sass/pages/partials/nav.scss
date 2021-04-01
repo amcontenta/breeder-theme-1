@@ -3,6 +3,7 @@
   position: absolute;
   width: 100%;
   z-index: 1;
+  max-width: 1400px;
 
   .doodles-name-logo {
     position: absolute;
@@ -56,5 +57,83 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+.mobile-nav-wrapper {
+  display: none;
+  background-color: $color-3;
+  height: 116px;
+
+  .hamburger-icon {
+    position: absolute;
+    top: 43px;
+    right: 37px;
+    cursor: pointer;
+  }
+}
+
+.mobile-logo {
+  font-family: $font-1;
+  font-size: 28px;
+  color: $color-1 !important;
+  position: absolute;
+  top: 34px;
+  left: 25px;
+  text-decoration: none;
+}
+
+.color-fill {
+  fill: $color-1;
+}
+
+.mobile-nav-overlay {
+  display: none;
+  background-color: $color-3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.close-icon {
+  position: absolute;
+  top: 43px;
+  right: 37px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  fill: $color-1;
+}
+
+.mobile-nav-link-wrapper {
+  height: 300px;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 158px;
+  margin-left: 25px;
+
+  a {
+    text-decoration: none;
+    font-family: $font-2;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: $color-2;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 840px) {
+  .mobile-nav-wrapper {
+    display: block;
+  }
+
+  .desktop-nav-wrapper {
+    display: none;
   }
 }
