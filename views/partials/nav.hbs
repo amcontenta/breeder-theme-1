@@ -4,12 +4,16 @@
     <a href="adopt" {{#isAdopt}}class="active" {{/isAdopt}}>Adopt</a>
     <a href="puppies" {{#isPuppies}}class="active" {{/isPuppies}}>Puppies</a>
     <a href="parents" {{#isParents}}class="active" {{/isParents}}>Parents</a>
-    <a href="info" {{#isInfo}}class="active" {{/isInfo}}>Information</a>
+    <a href="info" {{#isInfo}}class="active" {{/isInfo}}>Info</a>
     <a href="contact" {{#isContact}}class="active" {{/isContact}}>Contact</a>
   </div>
-  <div>
-    <a href="https://www.instagram.com/">{{> insta-icon width="18px" class="insta-logo-nav" }}</a>
-    <a href="https://www.facebook.com/"><img src="images/facebook-logo.svg" class="facebook-logo-nav" alt=""></a>
+  <div class="social-media-wrapper">
+    <a href="https://www.instagram.com/">
+      {{> insta-icon width="18px" }}
+    </a>
+    <a href="https://www.facebook.com/">
+      <img src="images/facebook-logo.svg" alt="" height="18">
+    </a>
   </div>
 </div>
 <div class="mobile-nav-wrapper">

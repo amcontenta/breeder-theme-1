@@ -3,7 +3,7 @@
   position: absolute;
   width: 100%;
   z-index: 1;
-  max-width: 1400px;
+  max-width: 1440px;
 
   .doodles-name-logo {
     position: absolute;
@@ -25,16 +25,23 @@
     color: $color-1;
   }
 
-  .insta-logo-nav {
+  .social-media-wrapper {
     position: absolute;
     top: 37px;
-    right: 60px;
-  }
+    right: 39px;
 
-  .facebook-logo-nav {
-    position: absolute;
-    top: 37px;
-    right: 29px;
+    a {
+      text-decoration: none;
+      display: inline-flex;
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
+
+      &:first-child {
+        margin-right: 5px;
+      }
+    }
   }
 
   .nav-links {
@@ -44,9 +51,9 @@
     a {
       text-decoration: none;
       font-family: $font-2;
-      font-size: 18px;
+      font-size: 15px;
       text-align: center;
-      margin-right: 40px;
+      margin-right: 34px;
       color: $color-1;
 
       &:hover {
@@ -63,11 +70,11 @@
 .mobile-nav-wrapper {
   display: none;
   background-color: $color-3;
-  height: 116px;
+  height: 90px;
 
   .hamburger-icon {
     position: absolute;
-    top: 43px;
+    top: 35px;
     right: 37px;
     cursor: pointer;
   }
@@ -75,10 +82,10 @@
 
 .mobile-logo {
   font-family: $font-1;
-  font-size: 28px;
+  font-size: 24px;
   color: $color-1 !important;
   position: absolute;
-  top: 34px;
+  top: 26px;
   left: 25px;
   text-decoration: none;
 }
@@ -100,7 +107,7 @@
 
 .close-icon {
   position: absolute;
-  top: 43px;
+  top: 35px;
   right: 37px;
   cursor: pointer;
   width: 24px;
@@ -128,7 +135,7 @@
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 950px) {
   .mobile-nav-wrapper {
     display: block;
   }

@@ -126,8 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 .page-wrapper {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto; }
 
 h1 {
@@ -167,8 +170,11 @@ h2 {
 
 @media only screen and (max-width: 840px) {
   h2 {
-    font-size: 28px; } }
+    font-size: 30px; } }
 
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 [data-page="home"] {
   /* Mobile Styles */ }
   [data-page="home"] .home-wrapper {
@@ -180,7 +186,7 @@ h2 {
     [data-page="home"] a:visited {
       color: #483d8b; }
   [data-page="home"] .home-image {
-    height: 670px;
+    height: 720px;
     width: 100%;
     background-image: url("images/dog-home.jpg");
     background-position: center top;
@@ -229,24 +235,25 @@ h2 {
     background-image: url("images/running-dog.jpg");
     background-position: center center;
     background-size: cover;
-    position: relative; }
+    position: relative;
+    overflow: auto; }
   [data-page="home"] .large-image-text {
     font-family: Shippori Mincho B1;
     font-size: 45px;
-    font-weight: 800;
+    font-weight: 600;
     color: white;
     line-height: 55px;
-    position: absolute;
-    top: 183px;
-    left: 95px; }
+    margin-top: 183px;
+    margin-left: 95px;
+    text-align: left; }
   [data-page="home"] .large-image-text-2 {
     font-family: Open Sans;
     font-size: 22px;
     color: white;
     line-height: 55px;
     margin-top: 34px;
-    text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: left; }
   [data-page="home"] .quote {
     font-family: Shippori Mincho B1;
     font-size: 45px;
@@ -311,15 +318,58 @@ h2 {
       left: 25px; }
     [data-page="home"] .image-text-wrapper {
       display: block;
-      padding: 0 5%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center; }
     [data-page="home"] .image-dog-1 {
-      order: 1; }
+      order: 1;
+      width: 100%; }
+    [data-page="home"] .image-dog-2 {
+      width: 100%; }
     [data-page="home"] .paragraph-text {
-      order: 2; } }
+      order: 2;
+      width: 100%;
+      max-width: 500px; }
+    [data-page="home"] .quote {
+      width: 80%;
+      font-size: 28px;
+      line-height: normal; }
+    [data-page="home"] .small-quote-text {
+      width: 80%;
+      font-size: 16px;
+      margin: 27px auto 0 auto; }
+    [data-page="home"] .mobile-p-wrapper {
+      padding: 0 5%; }
+    [data-page="home"] .large-image {
+      background-image: none;
+      background-color: #e5e8e8;
+      height: auto; }
+    [data-page="home"] .large-image-text {
+      width: 100%;
+      margin: 70px auto;
+      text-align: center;
+      color: #282b28;
+      font-size: 35px; }
+    [data-page="home"] .large-image-text-2 {
+      text-align: center;
+      color: #282b28;
+      font-weight: normal;
+      font-size: 20px; }
+    [data-page="home"] .gallery-wrapper {
+      padding: 60px 10px 0 10px; }
+    [data-page="home"] .gallery-text-wrapper {
+      padding: 0 10px; }
+    [data-page="home"] .photo-grid {
+      flex-wrap: wrap; }
+      [data-page="home"] .photo-grid .grid-item {
+        width: calc(50% - 25px);
+        margin-bottom: 25px; }
+        [data-page="home"] .photo-grid .grid-item:nth-child(2n) {
+          margin-right: 0; } }
 
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 [data-page="adopt"] .adopt-wrapper {
   font-family: Open Sans;
   font-size: 18px;
@@ -348,6 +398,9 @@ h2 {
   text-decoration: underline;
   font-size: 22px; }
 
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 [data-page="faq"] .faq-wrapper {
   font-family: Open Sans;
   font-size: 18px;
@@ -377,6 +430,9 @@ h2 {
   font-size: 24px;
   line-height: 24px; }
 
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 [data-page="contact"] .contact-wrapper {
   font-family: Open Sans;
   font-size: 20px;
@@ -406,6 +462,9 @@ h2 {
   [data-page="contact"] a:visited {
     color: #483d8b; }
 
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 [data-page="futurelitters"] .future-litters-wrapper {
   font-family: Open Sans;
   font-size: 18px;
@@ -461,6 +520,9 @@ h2 {
 [data-page="futurelitters"] .line-height {
   line-height: 40px; }
 
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 [data-page="pastlitters"] {
   /* Create four equal columns that sits next to each other */
   /* Responsive layout - makes a two column-layout instead of four columns */
@@ -493,6 +555,9 @@ h2 {
       flex: 100%;
       max-width: 100%; } }
 
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 [data-page="parents"] .parents-wrapper {
   font-family: Open Sans;
   font-size: 18px;
@@ -540,6 +605,9 @@ h2 {
 [data-page="parents"] .font-20 {
   font-size: 20px; }
 
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 [data-page="supplylist"] .faq-wrapper {
   font-family: Open Sans;
   font-size: 18px;
@@ -572,6 +640,9 @@ h2 {
   font-size: 24px;
   line-height: 24px; }
 
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 .footer-wrapper {
   background-color: #e5e8e8;
   position: relative;
@@ -579,14 +650,19 @@ h2 {
   font-size: 12px;
   color: #282b28;
   line-height: 2.5; }
-  .footer-wrapper .insta-logo-nav {
-    position: absolute;
-    top: 72px;
-    right: 100px; }
-  .footer-wrapper .facebook-logo-nav {
+  .footer-wrapper .social-media-wrapper {
     position: absolute;
     top: 72px;
     right: 61px; }
+    .footer-wrapper .social-media-wrapper a {
+      text-decoration: none;
+      width: 30px;
+      height: 30px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center; }
+      .footer-wrapper .social-media-wrapper a:nth-child(1) {
+        margin-right: 5px; }
   .footer-wrapper .contenta-doodles {
     font-family: Shippori Mincho B1;
     font-size: 20px;
@@ -595,11 +671,21 @@ h2 {
   .footer-wrapper .padding-bottom {
     padding-bottom: 56px; }
 
+/* Mobile Styles */
+@media only screen and (max-width: 840px) {
+  .footer-wrapper .social-media-wrapper {
+    position: relative;
+    top: 0;
+    right: 0; } }
+
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 .desktop-nav-wrapper {
   position: absolute;
   width: 100%;
   z-index: 1;
-  max-width: 1400px; }
+  max-width: 1440px; }
   .desktop-nav-wrapper .doodles-name-logo {
     position: absolute;
     top: 18px;
@@ -614,23 +700,28 @@ h2 {
     font-family: Open Sans;
     font-size: 18px;
     color: #282b28; }
-  .desktop-nav-wrapper .insta-logo-nav {
+  .desktop-nav-wrapper .social-media-wrapper {
     position: absolute;
     top: 37px;
-    right: 60px; }
-  .desktop-nav-wrapper .facebook-logo-nav {
-    position: absolute;
-    top: 37px;
-    right: 29px; }
+    right: 39px; }
+    .desktop-nav-wrapper .social-media-wrapper a {
+      text-decoration: none;
+      display: inline-flex;
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      justify-content: center; }
+      .desktop-nav-wrapper .social-media-wrapper a:first-child {
+        margin-right: 5px; }
   .desktop-nav-wrapper .nav-links {
     text-align: center;
     margin-top: 31px; }
     .desktop-nav-wrapper .nav-links a {
       text-decoration: none;
       font-family: Open Sans;
-      font-size: 18px;
+      font-size: 15px;
       text-align: center;
-      margin-right: 40px;
+      margin-right: 34px;
       color: #282b28; }
       .desktop-nav-wrapper .nav-links a:hover {
         color: #483d8b; }
@@ -640,19 +731,19 @@ h2 {
 .mobile-nav-wrapper {
   display: none;
   background-color: white;
-  height: 116px; }
+  height: 90px; }
   .mobile-nav-wrapper .hamburger-icon {
     position: absolute;
-    top: 43px;
+    top: 35px;
     right: 37px;
     cursor: pointer; }
 
 .mobile-logo {
   font-family: Shippori Mincho B1;
-  font-size: 28px;
+  font-size: 24px;
   color: #282b28 !important;
   position: absolute;
-  top: 34px;
+  top: 26px;
   left: 25px;
   text-decoration: none; }
 
@@ -671,7 +762,7 @@ h2 {
 
 .close-icon {
   position: absolute;
-  top: 43px;
+  top: 35px;
   right: 37px;
   cursor: pointer;
   width: 24px;
@@ -695,12 +786,15 @@ h2 {
     color: #483d8b; }
 
 /* Mobile Styles */
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 950px) {
   .mobile-nav-wrapper {
     display: block; }
   .desktop-nav-wrapper {
     display: none; } }
 
+/* Main Font Color */
+/* Buttons and Mobile Nav Link Color */
+/* Footer and New litter background */
 .mb-xxs {
   margin-bottom: 20px; }
 
@@ -739,3 +833,11 @@ strong {
 
 .overflow-hidden {
   overflow: hidden; }
+
+@media only screen and (max-width: 840px) {
+  .m-mb-m {
+    margin-bottom: 60px; }
+  .m-mb-lg {
+    margin-bottom: 80px; }
+  .m-mb-none {
+    margin-bottom: 0; } }
