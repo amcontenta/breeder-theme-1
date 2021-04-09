@@ -49,7 +49,19 @@ h2 {
 }
 
 @media only screen and (max-width: 840px) {
+  h1 {
+    font-size: 42px;
+  }
+
   h2 {
     font-size: 30px;
+  }
+
+  .mobile-padding {
+    padding: 0 5%;
+  }
+
+  .mobile-padding-lg {
+    padding: 0 15%;
   }
 }

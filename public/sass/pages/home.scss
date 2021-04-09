@@ -73,6 +73,10 @@
     line-height: 30px;
   }
 
+  .padding {
+    padding: 5%;
+  }
+
   .large-image {
     height: 590px;
     width: 100%;
@@ -174,7 +178,11 @@
   }
 
   /* Mobile Styles */
-  @media only screen and (max-width: 840px) {
+  @media only screen and (max-width: 950px) {
+    .home-wrapper {
+      font-size: 16px;
+    }
+
     .image-header {
       font-size: 30px;
       line-height: 36px;
@@ -203,10 +211,12 @@
     .image-dog-1 {
       order: 1;
       width: 100%;
+      max-width: 580px;
     }
 
     .image-dog-2 {
       width: 100%;
+      max-width: 580px;
     }
 
     .paragraph-text {
@@ -216,25 +226,23 @@
     }
 
     .quote {
-      width: 80%;
+      width: auto;
       font-size: 28px;
       line-height: normal;
     }
 
     .small-quote-text {
-      width: 80%;
+      width: auto;
       font-size: 16px;
       margin: 27px auto 0 auto;
-    }
-
-    .mobile-p-wrapper {
-      padding: 0 5%;
     }
 
     .large-image {
       background-image: none;
       background-color: $color-4;
       height: auto;
+      max-width: 580px;
+      margin: 0 auto 80px auto;
     }
 
     .large-image-text {
@@ -272,6 +280,5 @@
         }
       }
     }
-
   }
 }

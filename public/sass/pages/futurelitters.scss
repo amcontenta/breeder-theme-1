@@ -24,38 +24,14 @@
   .image-wrapper {
     display: flex;
     justify-content: center;
+    margin-left: 125px;
+    margin-right: 125px;
   }
 
-  .image-dog-1 {
-    width: 463px;
-    height: 420px;
-    background-image: url("images/dog-bed.jpg");
-    background-position: center center;
-    background-size: cover;
-  }
-
-  .image-dog-2 {
-    width: 463px;
-    height: 420px;
-    background-image: url("images/cavapoo-mom.jpg");
-    background-position: 50% 35%;
-    background-size: cover;
-  }
-
-  .image-dog-3 {
-    width: 463px;
-    height: 420px;
-    background-image: url("images/doodle-dad.jpg");
-    background-position: center center;
-    background-size: cover;
-  }
-
-  .image-dog-4 {
-    width: 463px;
-    height: 420px;
-    background-image: url("images/cavalier-mom.jpg");
-    background-position: 50% 35%;
-    background-size: cover;
+  .dog-images {
+    width: 50%;
+    max-width: 463px;
+    object-fit: cover;
   }
 
   .margin-right {
@@ -63,6 +39,39 @@
   }
 
   .line-height {
-    line-height: 40px;
+    line-height: 30px;
+  }
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 950px) {
+    .future-litters-wrapper {
+      font-size: 16px;
+    }
+
+    .header-image {
+      height: 300px;
+    }
+
+    .title {
+      margin: 217px auto 0 auto;
+      width: auto;
+    }
+
+    .image-wrapper {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .dog-images {
+      max-width: 365px;
+    }
+
+    .margin-right {
+      margin-right: 5px;
+    }
+
+    .waitlist-text {
+      line-height: normal;
+    }
   }
 }

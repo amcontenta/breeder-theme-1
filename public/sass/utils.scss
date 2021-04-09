@@ -53,6 +53,14 @@ strong {
 }
 
 @media only screen and (max-width: 840px) {
+  .m-mb-xxs {
+    margin-bottom: $m-mb-xxs;
+  }
+
+  .m-mb-s {
+    margin-bottom: $m-mb-s;
+  }
+
   .m-mb-m {
     margin-bottom: $m-mb-m;
   }
@@ -63,5 +71,9 @@ strong {
 
   .m-mb-none {
     margin-bottom: 0;
+  }
+
+  .mobile-ta-center {
+    text-align: center;
   }
 }
