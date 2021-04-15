@@ -120,9 +120,7 @@
 
   .gallery-wrapper {
     background-color: #475a58;
-    padding-top: 69px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 70px 50px;
   }
 
   .gallery-text-wrapper {
@@ -146,10 +144,6 @@
     }
   }
 
-  .insta-padding {
-    padding-bottom: 72px;
-  }
-
   /* Mobile Styles */
   @media only screen and (max-width: 950px) {
     .home-wrapper {
@@ -158,6 +152,14 @@
 
     .home-image {
       height: 635px;
+    }
+
+    .white-div {
+      background-color: $color-3;
+      width: 300px;
+      height: 200px;
+      top: 450px;
+      left: 5%;
     }
 
     .image-header {
@@ -170,19 +172,15 @@
       padding: 24px 25px;
     }
 
-    .white-div {
-      background-color: $color-3;
-      width: 300px;
-      height: 200px;
-      top: 450px;
-      left: 5%;
-    }
-
     .image-text-wrapper {
       display: block;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+    }
+
+    .padding {
+      padding: 0 5%;
     }
 
     .image-dog-1 {
@@ -202,29 +200,17 @@
       max-width: 500px;
     }
 
-    .quote {
-      width: auto;
-      font-size: 28px;
-      line-height: normal;
-    }
-
-    .small-quote-text {
-      width: auto;
-      font-size: 16px;
-      margin: 27px auto 0 auto;
-    }
-
     .large-image {
       background-image: none;
       background-color: $color-4;
       height: auto;
       max-width: 580px;
-      margin: 0 auto 80px auto;
+      margin: 0 auto 60px auto;
     }
 
     .large-image-text {
       width: 100%;
-      margin: 70px auto;
+      margin: 60px auto;
       text-align: center;
       color: $color-1;
       font-size: 35px;
@@ -237,8 +223,20 @@
       font-size: 20px;
     }
 
+    .quote {
+      width: auto;
+      font-size: 28px;
+      line-height: normal;
+    }
+
+    .small-quote-text {
+      width: auto;
+      font-size: 16px;
+      margin: 27px auto 0 auto;
+    }
+
     .gallery-wrapper {
-      padding: 60px 5% 0 5%;
+      padding: 10% 5%;
     }
 
     .gallery-text-wrapper {
@@ -247,6 +245,7 @@
 
     .photo-grid {
       flex-wrap: wrap;
+      margin-bottom: 20px;
 
       .grid-item {
         width: calc(50% - 25px);

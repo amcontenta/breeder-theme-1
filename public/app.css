@@ -277,9 +277,7 @@ a {
     margin-top: 27px; }
   [data-page="home"] .gallery-wrapper {
     background-color: #475a58;
-    padding-top: 69px;
-    padding-left: 50px;
-    padding-right: 50px; }
+    padding: 70px 50px; }
   [data-page="home"] .gallery-text-wrapper {
     text-align: left; }
   [data-page="home"] .photo-grid {
@@ -293,13 +291,17 @@ a {
     margin-right: 25px; }
     [data-page="home"] .grid-item:nth-child(4n) {
       margin-right: 0; }
-  [data-page="home"] .insta-padding {
-    padding-bottom: 72px; }
   @media only screen and (max-width: 950px) {
     [data-page="home"] .home-wrapper {
       font-size: 16px; }
     [data-page="home"] .home-image {
       height: 635px; }
+    [data-page="home"] .white-div {
+      background-color: white;
+      width: 300px;
+      height: 200px;
+      top: 450px;
+      left: 5%; }
     [data-page="home"] .image-header {
       font-size: 30px;
       line-height: 36px;
@@ -308,17 +310,13 @@ a {
       width: 251px;
       height: 146px;
       padding: 24px 25px; }
-    [data-page="home"] .white-div {
-      background-color: white;
-      width: 300px;
-      height: 200px;
-      top: 450px;
-      left: 5%; }
     [data-page="home"] .image-text-wrapper {
       display: block;
       display: flex;
       flex-wrap: wrap;
       justify-content: center; }
+    [data-page="home"] .padding {
+      padding: 0 5%; }
     [data-page="home"] .image-dog-1 {
       order: 1;
       width: 100%;
@@ -330,23 +328,15 @@ a {
       order: 2;
       width: 100%;
       max-width: 500px; }
-    [data-page="home"] .quote {
-      width: auto;
-      font-size: 28px;
-      line-height: normal; }
-    [data-page="home"] .small-quote-text {
-      width: auto;
-      font-size: 16px;
-      margin: 27px auto 0 auto; }
     [data-page="home"] .large-image {
       background-image: none;
       background-color: #e5e8e8;
       height: auto;
       max-width: 580px;
-      margin: 0 auto 80px auto; }
+      margin: 0 auto 60px auto; }
     [data-page="home"] .large-image-text {
       width: 100%;
-      margin: 70px auto;
+      margin: 60px auto;
       text-align: center;
       color: #282b28;
       font-size: 35px; }
@@ -355,12 +345,21 @@ a {
       color: #282b28;
       font-weight: normal;
       font-size: 20px; }
+    [data-page="home"] .quote {
+      width: auto;
+      font-size: 28px;
+      line-height: normal; }
+    [data-page="home"] .small-quote-text {
+      width: auto;
+      font-size: 16px;
+      margin: 27px auto 0 auto; }
     [data-page="home"] .gallery-wrapper {
-      padding: 60px 5% 0 5%; }
+      padding: 10% 5%; }
     [data-page="home"] .gallery-text-wrapper {
       padding: 0 10px; }
     [data-page="home"] .photo-grid {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-bottom: 20px; }
       [data-page="home"] .photo-grid .grid-item {
         width: calc(50% - 25px);
         margin-bottom: 25px; }
@@ -744,14 +743,18 @@ a {
     color: #282b28;
     padding-top: 55px; }
   .footer-wrapper .padding-bottom {
-    padding-bottom: 56px; }
+    padding-bottom: 55px; }
 
 /* Mobile Styles */
 @media only screen and (max-width: 950px) {
   .footer-wrapper .social-media-wrapper {
     position: relative;
     top: 0;
-    right: 0; } }
+    right: 0; }
+  .contenta-doodles {
+    padding-top: 30px; }
+  .padding-bottom {
+    padding-bottom: 30px; } }
 
 /* Main Font Color */
 /* Buttons and Mobile Nav Link Color */
