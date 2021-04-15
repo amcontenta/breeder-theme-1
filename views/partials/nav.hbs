@@ -2,9 +2,22 @@
   <div class="doodles-name-logo"><a href="/">Contenta Doodles</a></div>
   <div class="nav-links">
     <a href="adopt" {{#isAdopt}}class="active" {{/isAdopt}}>Adopt</a>
-    <a href="puppies" {{#isPuppies}}class="active" {{/isPuppies}}>Puppies</a>
+
+    <div class="dropdown-container">
+      <span class="dropdown-title">Puppies</span>
+      <div class="dropdown">
+        <a class="dropdown-link" href="futurelitters">Future Litters</a>
+        <a class="dropdown-link" href="pastlitters">Past Litters</a>
+      </div>
+    </div>
     <a href="parents" {{#isParents}}class="active" {{/isParents}}>Parents</a>
-    <a href="info" {{#isInfo}}class="active" {{/isInfo}}>Info</a>
+    <div class="dropdown-container">
+      <span class="dropdown-title">Info</span>
+      <div class="dropdown">
+        <a class="dropdown-link" href="faq">FAQ</a>
+        <a class="dropdown-link" href="supplylist">Supply List</a>
+      </div>
+    </div>
     <a href="contact" {{#isContact}}class="active" {{/isContact}}>Contact</a>
   </div>
   <div class="social-media-wrapper">

@@ -8,7 +8,7 @@
 h1 {
   font-family: $font-1;
   font-size: 55px;
-  font-weight: 800;
+  font-weight: 600;
   color: $color-3;
 }
 
@@ -48,7 +48,15 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 840px) {
+a {
+  color: $color-2;
+
+  &:visited {
+    color: $color-2;
+  }
+}
+
+@media only screen and (max-width: 950px) {
   h1 {
     font-size: 42px;
   }
@@ -59,9 +67,5 @@ h2 {
 
   .mobile-padding {
     padding: 0 5%;
-  }
-
-  .mobile-padding-lg {
-    padding: 0 15%;
   }
 }

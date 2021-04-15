@@ -64,6 +64,55 @@
         margin-right: 0;
       }
     }
+
+    .dropdown-container {
+      display: inline-block;
+      margin-right: 34px;
+      position: relative;
+
+      .dropdown {
+        display: none;
+        position: absolute;
+        background: white;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 10px 15px;
+        left: -15px;
+        white-space: nowrap;
+        margin-top: 7px;
+
+        &:before {
+          content: "";
+          width: 100%;
+          height: 7px;
+          top: -7px;
+          left: 0;
+          position: absolute;
+        }
+      }
+
+      &:hover {
+        .dropdown {
+          display: block;
+        }
+      }
+
+      .dropdown-link {
+        display: block;
+        margin-right: auto;
+        text-align: left;
+        cursor: pointer;
+        padding-bottom: 5px;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      .dropdown-title {
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
   }
 }
 
@@ -127,6 +176,7 @@
   a {
     text-decoration: none;
     font-family: $font-2;
+    color: $color-1;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
