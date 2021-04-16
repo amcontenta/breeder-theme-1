@@ -530,7 +530,8 @@ a {
   [data-page="futurelitters"] .dog-images {
     width: 50%;
     max-width: 463px;
-    object-fit: cover; }
+    object-fit: cover;
+    align-self: flex-start; }
   [data-page="futurelitters"] .margin-right {
     margin-right: 20px; }
   [data-page="futurelitters"] .line-height {
@@ -740,10 +741,9 @@ a {
   .footer-wrapper .contenta-doodles {
     font-family: Shippori Mincho B1;
     font-size: 20px;
-    color: #282b28;
-    padding-top: 55px; }
-  .footer-wrapper .padding-bottom {
-    padding-bottom: 55px; }
+    color: #282b28; }
+  .footer-wrapper .padding-text {
+    padding: 50px 0; }
 
 /* Mobile Styles */
 @media only screen and (max-width: 950px) {
@@ -751,10 +751,8 @@ a {
     position: relative;
     top: 0;
     right: 0; }
-  .contenta-doodles {
-    padding-top: 30px; }
-  .padding-bottom {
-    padding-bottom: 30px; } }
+  .footer-wrapper .padding-text {
+    padding: 30px 0; } }
 
 /* Main Font Color */
 /* Buttons and Mobile Nav Link Color */

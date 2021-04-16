@@ -31,11 +31,10 @@
     font-family: $font-1;
     font-size: 20px;
     color: $color-1;
-    padding-top: 55px;
   }
 
-  .padding-bottom {
-    padding-bottom: 55px;
+  .padding-text {
+    padding: 50px 0;
   }
 }
 
@@ -47,13 +46,9 @@
       top: 0;
       right: 0;
     }
-  }
 
-  .contenta-doodles {
-    padding-top: 30px;
-  }
-
-  .padding-bottom {
-    padding-bottom: 30px;
+    .padding-text {
+      padding: 35px 0;
+    }
   }
 }
