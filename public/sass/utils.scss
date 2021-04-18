@@ -36,6 +36,11 @@ strong {
   font-weight: bold;
 }
 
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 .show {
   display: block !important;
 }

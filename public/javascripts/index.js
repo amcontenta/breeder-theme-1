@@ -1,13 +1,18 @@
 $(document).ready(function () {
-  $(".js-hamburger-menu").on("click", function () {
-    $(".js-mobile-nav-overlay").addClass("show");
-    $("body").addClass("overflow-hidden");
+  $('.js-hamburger').on('click', function () {
+    if ($(this).hasClass('is-active')) {
+      $('.js-mobile-nav-overlay').removeClass('visible');
+      $('body').removeClass('overflow-hidden');
+    }
+    else {
+      $('.js-mobile-nav-overlay').addClass('visible');
+      $('body').addClass('overflow-hidden');
+    }
   });
 
-  $(".js-overlay-close-button").on("click", function () {
-    $(".js-mobile-nav-overlay").removeClass("show");
-    $("body").removeClass("overflow-hidden");
-  });
+  $('.js-hamburger').on('click', function () {
+    $(this).toggleClass('is-active');
+  })
 });
 
 ScrollReveal().reveal('.fade-in, h1', {
@@ -23,13 +28,3 @@ ScrollReveal().reveal('.fade-up-in', {
   distance: '50px',
   duration: 1500,
 });
-
-
-
-
-
-
-// const ash = {
-//   name: "ashley",
-//   age: 32,
-// };
