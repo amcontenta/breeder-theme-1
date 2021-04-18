@@ -12,19 +12,34 @@ $(document).ready(function () {
 
   $('.js-hamburger').on('click', function () {
     $(this).toggleClass('is-active');
-  })
+  });
+
+  $('body').addClass('visible');
+
+  // $('.page-wrapper > div:not(.desktop-nav-wrapper):not(.mobile-nav-wrapper):not(.mobile-nav-overlay)').addClass('visible');
+
+  // $('a').on('click', (evt) => {
+  //   const href = evt.target.href;
+  //   evt.preventDefault();
+  //   $('.page-wrapper > div:not(.desktop-nav-wrapper):not(.mobile-nav-wrapper):not(.mobile-nav-overlay)').removeClass('visible');
+  //   setTimeout(() => {
+  //     window.location.href = href;
+  //   }, 200);
+  // })
+
+  ScrollReveal().reveal('.fade-in, h1, .header-image', {
+    duration: 1500,
+  });
+  
+  ScrollReveal().reveal('.fade-up', {
+    distance: '50px',
+    duration: 1500,
+  });
+  
+  ScrollReveal().reveal('.fade-up-in', {
+    distance: '50px',
+    duration: 1500,
+  });
+  
 });
 
-ScrollReveal().reveal('.fade-in, h1', {
-  duration: 1500,
-});
-
-ScrollReveal().reveal('.fade-up', {
-  distance: '50px',
-  duration: 1500,
-});
-
-ScrollReveal().reveal('.fade-up-in', {
-  distance: '50px',
-  duration: 1500,
-});

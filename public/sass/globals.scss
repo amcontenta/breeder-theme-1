@@ -1,4 +1,10 @@
 @import "variables";
+// .page-wrapper
+//   > div:not(.desktop-nav-wrapper):not(.mobile-nav-wrapper):not(.mobile-nav-overlay) {
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: opacity 0.2s;
+// }
 
 .page-wrapper {
   max-width: 1440px;
