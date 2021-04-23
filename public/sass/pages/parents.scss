@@ -9,15 +9,20 @@
 
   .header-image {
     height: 500px;
-    width: 100%;
-    background-image: url("images/dog-beach.jpg");
-    background-position: 50% 30%;
-    background-size: cover;
-    position: relative;
-    overflow: auto;
+    // width: 100%;
+    // background-image: url("images/dog-beach.jpg");
+    // background-position: 50% 30%;
+    // background-size: cover;
+    // position: relative;
+    // overflow: auto;
+  }
+
+  .hero-image {
+    object-position: 50% 30% !important;
   }
 
   .title {
+    position: absolute;
     margin: 394px auto 0 15%;
   }
 

@@ -9,15 +9,16 @@
 
   .header-image {
     height: 500px;
-    width: 100%;
-    background-image: url("images/pup-rest.jpg");
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    overflow: auto;
+    // width: 100%;
+    // background-image: url("images/pup-rest.jpg");
+    // background-position: center center;
+    // background-size: cover;
+    // position: relative;
+    // overflow: auto;
   }
 
   .title {
+    position: absolute;
     margin: 394px auto 0 15%;
   }
 

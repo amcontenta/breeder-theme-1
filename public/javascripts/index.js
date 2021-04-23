@@ -14,17 +14,6 @@ $(document).ready(function () {
     $(this).toggleClass('is-active');
   });
 
-  // $('.page-wrapper > div:not(.desktop-nav-wrapper):not(.mobile-nav-wrapper):not(.mobile-nav-overlay)').addClass('visible');
-
-  // $('a').on('click', (evt) => {
-  //   const href = evt.target.href;
-  //   evt.preventDefault();
-  //   $('.page-wrapper > div:not(.desktop-nav-wrapper):not(.mobile-nav-wrapper):not(.mobile-nav-overlay)').removeClass('visible');
-  //   setTimeout(() => {
-  //     window.location.href = href;
-  //   }, 200);
-  // })
-
   ScrollReveal().reveal('.fade-in, h1', {
     duration: 1500,
   });
@@ -39,5 +28,7 @@ $(document).ready(function () {
     duration: 1500,
   });
   
+
+  $('.hide-til-load').removeClass('hide-til-load');
 });
 

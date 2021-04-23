@@ -9,23 +9,26 @@
 
   .header-image {
     height: 500px;
-    width: 100%;
-    background-image: url("images/dog-bones.jpg");
-    background-position: 10% 80%;
-    background-size: cover;
-    position: relative;
-    overflow: auto;
+    // width: 100%;
+    // background-image: url("images/dog-bones.jpg");
+    // background-position: 10% 80%;
+    // background-size: cover;
+    // position: relative;
+    // overflow: auto;
   }
 
   .title {
-    margin: 394px auto 0 auto;
+    // margin: 394px auto 0 auto;
+    top: -150px;
     width: 550px;
+    position: absolute;
   }
 
   .text-wrapper {
     width: 550px;
     margin: 0 auto;
     line-height: 24px;
+    position: relative;
   }
 
   .header {

@@ -129,6 +129,12 @@ table {
 /* Main Font Color */
 /* Buttons and Mobile Nav Link Color */
 /* Footer and New litter background */
+html.sr .load-hidden {
+  visibility: hidden; }
+
+.hide-til-load {
+  display: none; }
+
 .page-wrapper {
   max-width: 1440px;
   margin: 0 auto; }
@@ -173,6 +179,12 @@ a {
   a:visited {
     color: #483d8b; }
 
+.hero-image {
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
 @media only screen and (max-width: 950px) {
   h1 {
     font-size: 42px; }
@@ -190,12 +202,8 @@ a {
     font-family: Open Sans;
     font-size: 18px;
     color: #282b28; }
-  [data-page="home"] .home-image {
-    height: 720px;
-    width: 100%;
-    background-image: url("images/dog-home.jpg");
-    background-position: center top;
-    background-size: cover; }
+  [data-page="home"] .hero-image {
+    object-position: 50% 0% !important; }
   [data-page="home"] .white-div {
     background-color: white;
     width: 447px;
@@ -222,13 +230,13 @@ a {
   [data-page="home"] .image-dog-1 {
     width: 463px;
     height: 420px;
-    background-image: url("images/fluffy-puppy.jpg");
+    background-image: url("images/fluffy-puppy-medium.jpg");
     background-position: center top;
     background-size: cover; }
   [data-page="home"] .image-dog-2 {
     width: 463px;
     height: 420px;
-    background-image: url("images/white-dog.jpg");
+    background-image: url("images/white-dog-medium.jpg");
     background-position: center center;
     background-size: cover; }
   [data-page="home"] .paragraph-text {
@@ -376,20 +384,18 @@ a {
     font-size: 18px;
     color: #282b28; }
   [data-page="adopt"] .header-image {
-    height: 500px;
-    width: 100%;
-    background-image: url("images/dog-grass.jpg");
-    background-position: 50% 85%;
-    background-size: cover;
-    position: relative;
-    overflow: auto; }
+    height: 500px; }
+  [data-page="adopt"] .hero-image {
+    object-position: 50% 70%; }
   [data-page="adopt"] .title {
-    margin: 394px auto 0 auto;
-    width: 680px; }
+    top: -150px;
+    width: 680px;
+    position: absolute; }
   [data-page="adopt"] .text-wrapper {
     width: 680px;
     margin: 0 auto;
-    line-height: 24px; }
+    line-height: 24px;
+    position: relative; }
   [data-page="adopt"] .ul-bold {
     font-weight: 800;
     text-decoration: underline;
@@ -418,17 +424,13 @@ a {
     font-size: 18px;
     color: #282b28; }
   [data-page="faq"] .header-image {
-    height: 500px;
-    width: 100%;
-    background-image: url("images/sleeping.jpg");
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    overflow: auto; }
+    height: 500px; }
   [data-page="faq"] .title {
-    margin: 394px auto 0 auto;
-    width: 720px; }
+    top: -150px;
+    width: 720px;
+    position: relative; }
   [data-page="faq"] .text-wrapper {
+    position: relative;
     width: 720px;
     margin: 0 auto;
     line-height: 24px; }
@@ -513,14 +515,9 @@ a {
     font-size: 18px;
     color: #282b28; }
   [data-page="futurelitters"] .header-image {
-    height: 500px;
-    width: 100%;
-    background-image: url("images/pup-rest.jpg");
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    overflow: auto; }
+    height: 500px; }
   [data-page="futurelitters"] .title {
+    position: absolute;
     margin: 394px auto 0 15%; }
   [data-page="futurelitters"] .image-wrapper {
     display: flex;
@@ -595,15 +592,13 @@ a {
   color: #282b28; }
 
 [data-page="parents"] .header-image {
-  height: 500px;
-  width: 100%;
-  background-image: url("images/dog-beach.jpg");
-  background-position: 50% 30%;
-  background-size: cover;
-  position: relative;
-  overflow: auto; }
+  height: 500px; }
+
+[data-page="parents"] .hero-image {
+  object-position: 50% 30% !important; }
 
 [data-page="parents"] .title {
+  position: absolute;
   margin: 394px auto 0 15%; }
 
 [data-page="parents"] .image-text-wrapper {
@@ -684,20 +679,16 @@ a {
     font-size: 18px;
     color: #282b28; }
   [data-page="supplylist"] .header-image {
-    height: 500px;
-    width: 100%;
-    background-image: url("images/dog-bones.jpg");
-    background-position: 10% 80%;
-    background-size: cover;
-    position: relative;
-    overflow: auto; }
+    height: 500px; }
   [data-page="supplylist"] .title {
-    margin: 394px auto 0 auto;
-    width: 550px; }
+    top: -150px;
+    width: 550px;
+    position: absolute; }
   [data-page="supplylist"] .text-wrapper {
     width: 550px;
     margin: 0 auto;
-    line-height: 24px; }
+    line-height: 24px;
+    position: relative; }
   [data-page="supplylist"] .header {
     font-weight: 800;
     font-family: Shippori Mincho B1;

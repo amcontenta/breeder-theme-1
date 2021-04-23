@@ -9,20 +9,22 @@
 
   .header-image {
     height: 500px;
-    width: 100%;
-    background-image: url("images/sleeping.jpg");
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    overflow: auto;
+    // width: 100%;
+    // background-image: url("images/sleeping.jpg");
+    // background-position: center center;
+    // background-size: cover;
+    // position: relative;
+    // overflow: auto;
   }
 
   .title {
-    margin: 394px auto 0 auto;
+    top: -150px;
     width: 720px;
+    position: relative;
   }
 
   .text-wrapper {
+    position: relative;
     width: 720px;
     margin: 0 auto;
     line-height: 24px;

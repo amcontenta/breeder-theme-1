@@ -7,12 +7,16 @@
     color: $color-1;
   }
 
-  .home-image {
-    height: 720px;
-    width: 100%;
-    background-image: url("images/dog-home.jpg");
-    background-position: center top;
-    background-size: cover;
+  // .home-image {
+  //   height: 720px;
+  //   width: 100%;
+  //   background-image: url("images/dog-home.jpg");
+  //   background-position: center top;
+  //   background-size: cover;
+  // }
+
+  .hero-image {
+    object-position: 50% 0% !important;
   }
 
   .white-div {
@@ -47,7 +51,7 @@
   .image-dog-1 {
     width: 463px;
     height: 420px;
-    background-image: url("images/fluffy-puppy.jpg");
+    background-image: url("images/fluffy-puppy-medium.jpg");
     background-position: center top;
     background-size: cover;
   }
@@ -55,7 +59,7 @@
   .image-dog-2 {
     width: 463px;
     height: 420px;
-    background-image: url("images/white-dog.jpg");
+    background-image: url("images/white-dog-medium.jpg");
     background-position: center center;
     background-size: cover;
   }
