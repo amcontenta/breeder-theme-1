@@ -14,8 +14,6 @@ $(document).ready(function () {
     $(this).toggleClass('is-active');
   });
 
-  $('body').addClass('visible');
-
   // $('.page-wrapper > div:not(.desktop-nav-wrapper):not(.mobile-nav-wrapper):not(.mobile-nav-overlay)').addClass('visible');
 
   // $('a').on('click', (evt) => {
@@ -27,7 +25,7 @@ $(document).ready(function () {
   //   }, 200);
   // })
 
-  ScrollReveal().reveal('.fade-in, h1, .header-image', {
+  ScrollReveal().reveal('.fade-in, h1', {
     duration: 1500,
   });
   
@@ -37,7 +35,7 @@ $(document).ready(function () {
   });
   
   ScrollReveal().reveal('.fade-up-in', {
-    distance: '50px',
+    distance: '30px',
     duration: 1500,
   });
   
