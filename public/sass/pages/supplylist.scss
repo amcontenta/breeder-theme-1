@@ -9,20 +9,14 @@
 
   .header-image {
     height: 500px;
-    // width: 100%;
-    // background-image: url("images/dog-bones.jpg");
-    // background-position: 10% 80%;
-    // background-size: cover;
-    // position: relative;
-    // overflow: auto;
   }
 
-  .title {
-    // margin: 394px auto 0 auto;
-    top: -150px;
-    width: 550px;
-    position: absolute;
-  }
+  // .title {
+  //   // margin: 394px auto 0 auto;
+  //   top: -150px;
+  //   width: 550px;
+  //   position: absolute;
+  // }
 
   .text-wrapper {
     width: 550px;
@@ -48,10 +42,14 @@
       height: 300px;
     }
 
-    .title {
-      margin: 217px auto 0 auto;
-      width: auto;
+    .header {
+      font-size: 20px;
     }
+
+    // .title {
+    //   margin: 217px auto 0 auto;
+    //   width: auto;
+    // }
 
     .text-wrapper {
       margin: 0 auto;

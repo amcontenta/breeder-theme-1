@@ -141,9 +141,10 @@ html.sr .load-hidden {
 
 h1 {
   font-family: Shippori Mincho B1;
-  font-size: 55px;
+  font-size: 44px;
   font-weight: 600;
-  color: white; }
+  color: #282b28;
+  line-height: normal; }
 
 h2 {
   font-family: Shippori Mincho B1;
@@ -187,7 +188,7 @@ a {
 
 @media only screen and (max-width: 950px) {
   h1 {
-    font-size: 42px; }
+    font-size: 32px; }
   h2 {
     font-size: 30px; }
   .mobile-padding {
@@ -202,8 +203,11 @@ a {
     font-family: Open Sans;
     font-size: 18px;
     color: #282b28; }
-  [data-page="home"] .hero-image {
-    object-position: 50% 0% !important; }
+  [data-page="home"] .hero-home-image {
+    object-position: 50% 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
   [data-page="home"] .white-div {
     background-color: white;
     width: 447px;
@@ -253,9 +257,9 @@ a {
     position: relative;
     overflow: auto; }
   [data-page="home"] .large-image-text {
-    font-family: Shippori Mincho B1;
+    font-family: Open Sans;
     font-size: 45px;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
     line-height: 55px;
     margin-top: 183px;
@@ -288,6 +292,11 @@ a {
     padding: 70px 50px; }
   [data-page="home"] .gallery-text-wrapper {
     text-align: left; }
+  [data-page="home"] .insta-font {
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 500;
+    color: white; }
   [data-page="home"] .photo-grid {
     display: flex;
     align-items: center;
@@ -304,10 +313,13 @@ a {
       font-size: 16px; }
     [data-page="home"] .home-image {
       height: 635px; }
+    [data-page="home"] .hero-home-image {
+      object-position: 60% 80%; }
     [data-page="home"] .white-div {
       background-color: white;
       width: 300px;
       height: 200px;
+      opacity: 0.6;
       top: 450px;
       left: 5%; }
     [data-page="home"] .image-header {
@@ -386,15 +398,10 @@ a {
   [data-page="adopt"] .header-image {
     height: 500px; }
   [data-page="adopt"] .hero-image {
-    object-position: 50% 70%; }
-  [data-page="adopt"] .title {
-    top: -150px;
-    width: 680px;
-    position: absolute; }
+    object-position: 50% 80%; }
   [data-page="adopt"] .text-wrapper {
     width: 680px;
     margin: 0 auto;
-    line-height: 24px;
     position: relative; }
   [data-page="adopt"] .ul-bold {
     font-weight: 800;
@@ -406,9 +413,6 @@ a {
     [data-page="adopt"] .header-image {
       height: 300px;
       background-position: 50% 85%; }
-    [data-page="adopt"] .title {
-      margin: 217px auto 0 auto;
-      width: auto; }
     [data-page="adopt"] .ul-bold {
       font-size: 20px; }
     [data-page="adopt"] .text-wrapper {
@@ -425,10 +429,6 @@ a {
     color: #282b28; }
   [data-page="faq"] .header-image {
     height: 500px; }
-  [data-page="faq"] .title {
-    top: -150px;
-    width: 720px;
-    position: relative; }
   [data-page="faq"] .text-wrapper {
     position: relative;
     width: 720px;
@@ -443,13 +443,10 @@ a {
       font-size: 16px; }
     [data-page="faq"] .header-image {
       height: 300px; }
-    [data-page="faq"] .title {
-      margin: 217px auto 0 auto;
-      width: auto; }
     [data-page="faq"] .text-wrapper {
       width: auto; }
     [data-page="faq"] .header {
-      font-size: 22px;
+      font-size: 20px;
       line-height: normal; } }
 
 /* Main Font Color */
@@ -503,7 +500,7 @@ a {
     [data-page="contact"] .margin-bottom-3 {
       margin-bottom: 15px; }
     [data-page="contact"] .mobile-margin {
-      margin-bottom: 25px; } }
+      margin-bottom: 35px; } }
 
 /* Main Font Color */
 /* Buttons and Mobile Nav Link Color */
@@ -516,9 +513,6 @@ a {
     color: #282b28; }
   [data-page="futurelitters"] .header-image {
     height: 500px; }
-  [data-page="futurelitters"] .title {
-    position: absolute;
-    margin: 394px auto 0 15%; }
   [data-page="futurelitters"] .image-wrapper {
     display: flex;
     justify-content: center;
@@ -538,9 +532,6 @@ a {
       font-size: 16px; }
     [data-page="futurelitters"] .header-image {
       height: 300px; }
-    [data-page="futurelitters"] .title {
-      margin: 217px auto 0 auto;
-      width: auto; }
     [data-page="futurelitters"] .image-wrapper {
       margin-left: 0;
       margin-right: 0; }
@@ -597,10 +588,6 @@ a {
 [data-page="parents"] .hero-image {
   object-position: 50% 30% !important; }
 
-[data-page="parents"] .title {
-  position: absolute;
-  margin: 394px auto 0 15%; }
-
 [data-page="parents"] .image-text-wrapper {
   display: flex;
   align-items: center;
@@ -643,29 +630,25 @@ a {
     font-size: 16px; }
   [data-page="parents"] .header-image {
     height: 300px; }
-  [data-page="parents"] .title {
-    margin: 217px auto 0 auto;
-    width: auto;
-    color: white; }
   [data-page="parents"] .image-text-wrapper {
     display: block;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
   [data-page="parents"] .image-dog-1 {
-    order: 2;
+    order: 1;
     width: 100%;
     max-width: 580px; }
   [data-page="parents"] .image-dog-2 {
-    order: 2;
+    order: 1;
     width: 100%;
     max-width: 580px; }
   [data-page="parents"] .image-dog-3 {
-    order: 2;
+    order: 1;
     width: 100%;
     max-width: 580px; }
   [data-page="parents"] .paragraph-text {
-    order: 1;
+    order: 2;
     width: 100%;
     max-width: 500px; } }
 
@@ -680,10 +663,6 @@ a {
     color: #282b28; }
   [data-page="supplylist"] .header-image {
     height: 500px; }
-  [data-page="supplylist"] .title {
-    top: -150px;
-    width: 550px;
-    position: absolute; }
   [data-page="supplylist"] .text-wrapper {
     width: 550px;
     margin: 0 auto;
@@ -699,9 +678,8 @@ a {
       font-size: 16px; }
     [data-page="supplylist"] .header-image {
       height: 300px; }
-    [data-page="supplylist"] .title {
-      margin: 217px auto 0 auto;
-      width: auto; }
+    [data-page="supplylist"] .header {
+      font-size: 20px; }
     [data-page="supplylist"] .text-wrapper {
       margin: 0 auto;
       width: auto; } }
@@ -782,7 +760,7 @@ a {
         margin-right: 5px; }
   .desktop-nav-wrapper .nav-links {
     text-align: center;
-    margin-top: 31px; }
+    margin-top: 33px; }
     .desktop-nav-wrapper .nav-links a {
       text-decoration: none;
       font-family: Open Sans;
@@ -1035,6 +1013,8 @@ strong {
 @media only screen and (max-width: 950px) {
   .m-mb-xxs {
     margin-bottom: 10px; }
+  .m-mb-xs {
+    margin-bottom: 35px; }
   .m-mb-s {
     margin-bottom: 40px; }
   .m-mb-m {

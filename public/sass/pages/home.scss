@@ -7,16 +7,11 @@
     color: $color-1;
   }
 
-  // .home-image {
-  //   height: 720px;
-  //   width: 100%;
-  //   background-image: url("images/dog-home.jpg");
-  //   background-position: center top;
-  //   background-size: cover;
-  // }
-
-  .hero-image {
-    object-position: 50% 0% !important;
+  .hero-home-image {
+    object-position: 50% 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .white-div {
@@ -84,9 +79,9 @@
   }
 
   .large-image-text {
-    font-family: $font-1;
+    font-family: $font-2;
     font-size: 45px;
-    font-weight: 600;
+    font-weight: 500;
     color: $color-3;
     line-height: 55px;
     margin-top: 183px;
@@ -131,6 +126,13 @@
     text-align: left;
   }
 
+  .insta-font {
+    font-family: $font-2;
+    font-size: 40px;
+    font-weight: 500;
+    color: $color-3;
+  }
+
   .photo-grid {
     display: flex;
     align-items: center;
@@ -158,10 +160,15 @@
       height: 635px;
     }
 
+    .hero-home-image {
+      object-position: 60% 80%;
+    }
+
     .white-div {
       background-color: $color-3;
       width: 300px;
       height: 200px;
+      opacity: 0.6;
       top: 450px;
       left: 5%;
     }

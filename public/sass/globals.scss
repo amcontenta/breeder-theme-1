@@ -16,9 +16,10 @@ html.sr .load-hidden {
 
 h1 {
   font-family: $font-1;
-  font-size: 55px;
+  font-size: 44px;
   font-weight: 600;
-  color: $color-3;
+  color: $color-1;
+  line-height: normal;
 }
 
 h2 {
@@ -74,7 +75,7 @@ a {
 
 @media only screen and (max-width: 950px) {
   h1 {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   h2 {
