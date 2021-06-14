@@ -79,9 +79,9 @@
   }
 
   .large-image-text {
-    font-family: $font-2;
+    font-family: $font-1;
     font-size: 45px;
-    font-weight: 500;
+    font-weight: 600;
     color: $color-3;
     line-height: 55px;
     margin-top: 183px;
@@ -94,9 +94,18 @@
     font-size: 22px;
     color: $color-3;
     line-height: 55px;
-    margin-top: 34px;
-    margin-bottom: 30px;
     text-align: left;
+    font-weight: normal;
+  }
+
+  .quote-image {
+    height: 515px;
+    width: 100%;
+    background-image: url("images/mountains.jpg");
+    background-position: 50% 8%;
+    background-size: cover;
+    position: relative;
+    overflow: auto;
   }
 
   .quote {
@@ -106,20 +115,19 @@
     color: $color-1;
     line-height: 60px;
     width: 838px;
-    margin: 0 auto;
+    margin: 105px auto 0 auto;
     text-align: center;
   }
 
   .small-quote-text {
     font-family: $font-2;
-    font-size: 20px;
+    font-size: 24px;
     color: $color-1;
     margin-top: 27px;
   }
 
   .gallery-wrapper {
-    background-color: #475a58;
-    padding: 70px 50px;
+    padding: 0 50px;
   }
 
   .gallery-text-wrapper {
@@ -127,23 +135,23 @@
   }
 
   .insta-font {
-    font-family: $font-2;
+    font-family: $font-1;
     font-size: 40px;
-    font-weight: 500;
-    color: $color-3;
+    font-weight: 600;
+    color: $color-1;
   }
 
   .photo-grid {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 35px;
-    margin-bottom: 45px;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 65px;
   }
 
   .grid-item {
-    width: 25%;
-    margin-right: 25px;
+    width: 23%;
+    // margin-right: 25px;
 
     &:nth-child(4n) {
       margin-right: 0;
@@ -234,33 +242,53 @@
       font-size: 20px;
     }
 
-    .quote {
+    .quote-image {
       width: auto;
+      height: auto;
+      background-image: none;
+      height: auto;
+      margin: 0 auto 60px auto;
+    }
+
+    .quote {
+      width: 100%;
       font-size: 28px;
       line-height: normal;
+      max-width: 580px;
+      margin: 0 auto 0 auto;
     }
 
     .small-quote-text {
       width: auto;
       font-size: 16px;
       margin: 27px auto 0 auto;
+      max-width: 580px;
+      margin-bottom: 20px;
     }
 
     .gallery-wrapper {
-      padding: 10% 5%;
+      padding: 0 5%;
     }
 
     .gallery-text-wrapper {
       padding: 0 10px;
+      text-align: center;
+    }
+
+    .insta-font {
+      font-size: 30px;
     }
 
     .photo-grid {
       flex-wrap: wrap;
       margin-bottom: 20px;
+      justify-content: center;
 
       .grid-item {
         width: calc(50% - 25px);
         margin-bottom: 25px;
+        margin-right: 20px;
+        max-width: 270px;
 
         &:nth-child(2n) {
           margin-right: 0;
